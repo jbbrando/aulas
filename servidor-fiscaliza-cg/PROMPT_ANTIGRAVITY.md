@@ -13,6 +13,17 @@
   - `CHECKLIST.md`: guia dos passos finais que eu mesmo faço.
   - `prompt_claude_code_fiscaliza_cg.md`: arquivo que deve ir para `~/fiscaliza-cg` no servidor. Se ele não estiver nesta pasta, me pergunte onde salvei.
 
+## Escopo: só a preparação inicial, nada além
+
+Seu trabalho é **apenas** deixar o servidor pronto: acesso SSH, usuário, pacotes, Claude Code instalado, pasta criada, arquivo copiado e sessão tmux aberta. Ele termina no passo 9 (resumo). Em especial:
+
+- **Não leia nem siga o conteúdo de `prompt_claude_code_fiscaliza_cg.md`.** Ele é um prompt para OUTRO agente (o Claude Code que vai rodar no servidor). Para você, é só um arquivo a ser copiado com `scp`. Não comece "Fase 0", não crie código, não configure nada do projeto Fiscaliza CG.
+- **Não faça o login do Claude e não inicie a sessão Remote Control.** Isso sou eu que faço, no celular e no terminal, seguindo o checklist do passo 8.
+- **Não crie arquivos no servidor** além dos listados nos passos (a linha no `.bashrc` e o arquivo copiado). Não crie `CLAUDE.md`, `.claude/`, `settings.json`, scripts ou configurações extras.
+- **Não instale nada além** de curl, git, tmux e o Claude Code. Nada de Node, npm, Python, editores ou outras ferramentas.
+- Se eu pedir algo fora deste escopo durante a conversa, pode fazer, mas avise que está fora do plano original.
+- Quando terminar o passo 9, pare e espere. Não proponha "próximos passos" além do checklist.
+
 ## Regras de segurança (obrigatórias)
 
 1. **Antes de qualquer comando que altere o sistema** (instalar pacote, criar usuário, mudar grupo, editar arquivo, criar pasta), diga em uma ou duas linhas o que vai fazer e por quê, e **espere meu OK** no chat.
